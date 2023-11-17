@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Itim", cursive;
+}
+
+body {
+  margin: 20px 60px;
+}
+
+a {
+  text-decoration: none;
+  color: #2e0249;
+}
+
+nav {
+  padding: 1rem;
+  background-color: #2e0249;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+.drop-container {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  color: #444;
+}
+
+.drop-container:hover .drop-title {
+  color: #222;
+}
+
+.drop-title {
+  color: #444;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  transition: color 0.2s ease-in-out;
+}
+
+.drop-container div {
+  width: 100%;
+  background-color: #2e0249;
+}
+
+.drop-container div p {
+  color: white;
+  padding: 6px;
+}
+
+.drop-container div textarea:disabled {
+  background-color: #e7d8f1;
+}
+
+.drop-container div textarea {
+  width: 100%;
+  height: 400px;
+  resize: none;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: inherit;
+}
+
+button {
+  margin-top: 20px;
+  cursor: pointer;
+  width: 100%;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.about_section {
+  margin-top: 4rem;
+}
+
+.about_section h2 {
+  margin-bottom: 1.6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #2e0249;
+}
+
+.about_section h3 {
+  margin-top: 1rem;
+  color: #2e0249;
+  font-size: 1.4rem;
+}
+
+.about_section h4 {
+  margin-top: 1rem;
+  color: #2e0249;
+  font-size: 1.2rem;
+}
+
+.about_section p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.img_container {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.img_container img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 10px 30px;
+  }
+
+  .drop-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    margin: 5px 15px;
+  }
+
+  .about_section p {
+    font-size: 1rem;
+  }
+
+  .drop-container div textarea {
+    height: 300px;
+  }
+}
